@@ -1,0 +1,46 @@
+<div class="container">
+
+      <div class="row">
+              <div class="col-12">
+                  <select #selectedValue  class="form-control"  (change)="reload(selectedValue.value)">
+                    <option *ngFor="let s of selection" [value]="s.name">{{s.name}}</option>
+                  </select>
+              </div>
+      </div>
+
+
+
+    <div class="row my-4" >
+
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    Últimas Negociações:
+                </div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Volume Token</th>
+                        <th>Volume Reais</th>
+                        <th>Tipo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let n of negocios; let i = index" [style.background-color]="n.side =='buy' ? '#c9e8e7' : '  #faa49e'">
+                        <th scope="row">{{i + 1}}</th>
+                        <td>{{n.datetime}}</td>
+                        <td>R$ {{n.price}}</td>
+                        <td>{{n.amount}}</td>
+                        <td>R$ {{n.amount * n.price}}</td>
+                        <td>{{n.side}}</td>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
+
