@@ -21,7 +21,6 @@
                 <table class="table">
                     <thead>
                       <tr>
-                        <th>#</th>
                         <th>Data</th>
                         <th>Valor</th>
                         <th>Volume Token</th>
@@ -31,7 +30,6 @@
                     </thead>
                     <tbody>
                       <tr *ngFor="let n of negocios; let i = index" [style.background-color]="n.side =='buy' ? '#c9e8e7' : '  #faa49e'">
-                        <th scope="row">{{i + 1}}</th>
                         <td>{{n.datetime}}</td>
                         <td>{{n.price | currency:'BRL':true:'1.2-2'}}</td>
                         <td>{{n.amount  | number: '1.4-4'}}</td>
