@@ -33,9 +33,9 @@
                       <tr *ngFor="let n of negocios; let i = index" [style.background-color]="n.side =='buy' ? '#c9e8e7' : '  #faa49e'">
                         <th scope="row">{{i + 1}}</th>
                         <td>{{n.datetime}}</td>
-                        <td>R$ {{n.price}}</td>
-                        <td>{{n.amount}}</td>
-                        <td>R$ {{n.amount * n.price}}</td>
+                        <td>{{n.price | currency:'BRL':true:'1.2-2'}}</td>
+                        <td>{{n.amount  | number: '1.4-4'}}</td>
+                        <td>{{n.amount * n.price | currency:'BRL':true:'1.2-2'}}</td>
                         <td>{{n.side}}</td>
                     </tbody>
                   </table>

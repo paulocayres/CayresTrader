@@ -10,7 +10,7 @@
 
     <div class="row my-4" >
 
-        <div class="col-6">
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <div class="card">
               <div class="card-header">
                   Compras:
@@ -26,15 +26,15 @@
                   <tbody>
                     <tr *ngFor="let bid of orders.bids; let i = index">
                       <th scope="row">{{i + 1}}</th>
-                      <td>R$ {{bid[0]}}</td>
-                      <td>{{bid[1]}}</td>
+                      <td>{{bid[0] | currency:'BRL':true:'1.2-2'}}</td>
+                      <td>{{bid[1] | number: '1.4-4' }}</td>
                     </tr>
                   </tbody>
                 </table>
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <div class="card">
                 <div class="card-header">
                     Vendas:
@@ -50,8 +50,8 @@
                     <tbody>
                       <tr *ngFor="let ask of orders.asks; let i = index">
                         <th scope="row">{{i + 1}}</th>
-                        <td>R$ {{ask[0]}}</td>
-                        <td>{{ask[1]}}</td>
+                        <td>{{ask[0] | currency:'BRL':true:'1.2-2'}}</td>
+                        <td>{{ask[1] | number: '1.4-4'}}</td>
                       </tr>
                     </tbody>
                   </table>

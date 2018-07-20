@@ -1,1 +1,166 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 1px) {
+	h1{
+		font-size: 20px;
+	}
+
+	h2{
+		font-size: 15px;
+	}
+
+	h3{
+		font-size: 10px;
+	}
+
+	h4{
+		font-size: 8px;
+	}
+
+	h5{
+		font-size: 5px;
+  }
+
+  .table td {
+    font-size: 8px;
+  }
+
+  .table th {
+    font-size: 8px;
+  }
+
+
+  div #tradingview_96f75{
+    max-height: 300px
+  }
+
+  div h5 strong{
+    font-size: 8px;
+  }
+
+
+ }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	h1{
+		font-size: 25px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	h3{
+		font-size: 15px;
+	}
+
+	h4{
+		font-size: 10px;
+	}
+
+	h5{
+		font-size: 8px;
+	}
+
+  .table td {
+    font-size: 10px;
+  }
+
+  .table th {
+    font-size: 10px;
+  }
+
+  div #tradingview_96f75{
+    max-height: 400px
+  }
+
+  div h5 strong{
+    font-size: 10px;
+  }
+
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	h1{
+		font-size: 30px;
+	}
+
+	h2{
+		font-size: 25px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	h4{
+		font-size: 15px;
+	}
+
+	h5{
+		font-size: 10px;
+  }
+
+  .table td {
+    font-size: 15px;
+  }
+
+  .table th {
+    font-size: 15px;
+  }
+
+  div h5 strong{
+    font-size: 15px;
+  }
+
+  div #tradingview_96f75{
+    max-height: 550px
+  }
+
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	h1{
+		font-size: 30px;
+	}
+
+	h2{
+		font-size: 25px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	h4{
+		font-size: 15px;
+	}
+
+	h5{
+		font-size: 10px;
+  }
+
+  .table td {
+    font-size: 15px;
+  }
+
+  .table th {
+    font-size: 15px;
+  }
+
+  div #tradingview_96f75{
+    max-height: 550px
+  }
+
+  div h5 strong{
+    font-size: 15px;
+  }
+
+
+
+ }

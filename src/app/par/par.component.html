@@ -30,7 +30,7 @@
                     <tr *ngFor="let n of negocios; let i = index">
                       <th scope="row">{{i + 1}}</th>
                       <td>{{n.datetime}}</td>
-                      <td>{{n.price}}</td>
+                      <td>{{n.price | number: '1.8-8'}}</td>
                   </tbody>
                 </table>
           </div>
