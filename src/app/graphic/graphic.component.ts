@@ -17,7 +17,7 @@ export class GraphicComponent implements OnInit {
     return new TradingView.widget(
       {
       'autosize': true,
-      'symbol': 'MERCADO:BTCBRL',
+      'symbol': 'BITSTAMP:BTCUSD',
       'interval': '240',
       'timezone': 'exchange',
       'theme': 'Light',
