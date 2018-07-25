@@ -31,6 +31,7 @@ export class GraphicComponent implements OnInit {
         'MERCADO:BTCBRL',
         'MERCADO:LTCBRL',
         'MERCADO:BCHBRL',
+        'BITSTAMP:BTCUSD',
         'COINBASE:BTCUSD',
         'COINBASE:LTCUSD',
         'COINBASE:BCHUSD',
