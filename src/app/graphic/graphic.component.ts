@@ -40,7 +40,9 @@ export class GraphicComponent implements OnInit {
       ],
       'details': true,
       'studies': [
-        'BB@tv-basicstudies'
+        'BB@tv-basicstudies',
+        'Stochastic@tv-basicstudies',
+        'StochasticRSI@tv-basicstudies'
       ],
       'container_id': 'tradingview_96f75'
     });
