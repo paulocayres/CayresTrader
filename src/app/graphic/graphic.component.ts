@@ -42,7 +42,16 @@ export class GraphicComponent implements OnInit {
       'studies': [
         'BB@tv-basicstudies',
         'Stochastic@tv-basicstudies',
-        'StochasticRSI@tv-basicstudies'
+        'StochasticRSI@tv-basicstudies',
+        'study("BTC longs n' shorts", shorttitle="BitFinex positions")
+
+
+        long = security("BITFINEX:BTCUSDLONGS", period, close)
+        short = security("BITFINEX:BTCUSDSHORTS", period, close)
+
+
+        p1 = plot(long, color=#7481f2, style=line, linewidth=2, transp=10, trackprice=true, title="Longs")
+        p2 = plot(short, color=#f46666, style=line, linewidth=2, transp=10, trackprice=true, title="Shorts")'
       ],
       'container_id': 'tradingview_96f75'
     });
