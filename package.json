@@ -11,6 +11,12 @@
     "postinstall": "ng build --prod",
     "start": "node server.js"
   },
+
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.11.2"
+  },
+
   "private": true,
   "dependencies": {
     "@angular/cli": "~1.7.3",
